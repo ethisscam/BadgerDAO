@@ -5,8 +5,11 @@
 
 endpoint:
 https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-v2/graphql
-```
+
 sql
+
+```
+
 {
   balancers(first: 500) {
     id
@@ -29,6 +32,7 @@ sql
 ```
 endpoint:
 https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-gauges/graphql
+
 sql:
 ```
 {
