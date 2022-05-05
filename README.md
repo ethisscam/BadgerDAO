@@ -3,8 +3,9 @@
 ## Balancer Gauge Pool
 - get the pool info
 
-import gql from 'graphql-tag';
-export const getBalancerPoolData = gql`
+endpoint:
+https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-v2/graphql
+sql
 {
   balancers(first: 500) {
     id
@@ -25,8 +26,9 @@ export const getBalancerPoolData = gql`
   }
 }
   `;
-
-export const getGaugeData = gql`
+endpoint:
+https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-gauges/graphql
+sql: 
 {
   votingEscrows {
     stakedSupply
@@ -42,9 +44,5 @@ export const getGaugeData = gql`
     }
   }
 }
-  `;
   
-endpoint:
-https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-gauges/graphql
-https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-v2/graphql
 
