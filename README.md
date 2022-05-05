@@ -5,6 +5,7 @@
 
 endpoint:
 https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-v2/graphql
+```
 sql
 {
   balancers(first: 500) {
@@ -25,10 +26,11 @@ sql
     totalLiquidity
   }
 }
-  `;
+```
 endpoint:
 https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-gauges/graphql
-sql: 
+sql:
+```
 {
   votingEscrows {
     stakedSupply
@@ -44,5 +46,6 @@ sql:
     }
   }
 }
+```
   
 
